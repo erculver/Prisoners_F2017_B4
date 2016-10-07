@@ -12,17 +12,6 @@ strategy_name = 'Win'
 strategy_description = 'PBbt Ill never tell'
     
 def move(my_history, their_history, my_score, their_score):
-    if len(my_history)<=2:
-        return 'c'
-    if their_history[0:3]== 'ccb' and len(my_history)==3:
-        return 'b'
-    if their_history[0:4]== 'ccbc' and len(my_history)==4:
-        return 'c'    
-    if their_history[0:5]== 'ccbcb':
-        return 'b'
-    if 'b' in their_history:
-        return 'b'
-    else:
         return 'c'
 
     
